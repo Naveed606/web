@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>M3U8 Stream Player</title>
+  <!-- Video.js CSS -->
+  <link href="https://vjs.zencdn.net/8.3.0/video-js.css" rel="stylesheet" />
+</head>
+<body>
+
+  <video
+    id="my-video"
+    class="video-js"
+    controls
+    preload="auto"
+    width="640"
+    height="360"
+    data-setup='{}'>
+    <source src="http://182.180.85.251:5251/Hum/index.m3u8" type="application/x-mpegURL">
+    <!-- Fallback text -->
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Video.js JS -->
+  <script src="https://vjs.zencdn.net/8.3.0/video.min.js"></script>
+
+</body>
+</html>
